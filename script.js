@@ -271,15 +271,14 @@ function renderOverlay() {
   overlayEl.innerHTML = html;
 }
 
-// --- keyboard start support ---
 document.addEventListener("keydown", (e) => {
-  // Enter starts when idle
+
   if (!started && typingAreaEl.disabled && e.key === "Enter") {
     e.preventDefault();
     startTest();
     return;
   }
-  // Enter stops while running
+
   if (started && e.key === "Enter") {
     e.preventDefault();
     endTest();
