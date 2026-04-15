@@ -230,7 +230,8 @@ body {
 .timer {
   font-variant-numeric: tabular-nums;
   font-weight: 600;
-  color: var(--muted);
+  color: var(--accent);
+  font-size: 1.1rem;
 }
 
 .prompt-text {
@@ -242,6 +243,7 @@ body {
 
 .controls {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
@@ -405,6 +407,7 @@ body {
 }
 .typing-container {
   position: relative;
+  font-family: monospace;
 }
 
 .typing-overlay {
